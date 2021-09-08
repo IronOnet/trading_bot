@@ -67,3 +67,4 @@ class Config:
         
         self.SELL_TIMEOUT = os.environ.get("SELL_TIMEOUT") or config.get(USER_CFG_SECTION, "sell_timeout") 
         self.BUY_TIMEOUT = os.environ.get("BUY_TIMEOUT") or config.get(USER_CFG_SECTION, "buy_timeout")
+        self.FLASK_APP = os.environ.get("FLASK_APP") or config.get(USER_CFG_SECTION, "flask_app")
